@@ -12,7 +12,7 @@ const mailerCron = () => {
     
         notificationsToBeSent.forEach(notification => {
             const mailData = {
-                from: 'mba@support.com',
+                from: 'DiggalsMovieBookingApp@support.com',
                 to: notification.recepientEmails,
                 subject: notification.subject,
                 text: notification.content

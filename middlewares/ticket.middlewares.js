@@ -1,5 +1,6 @@
 const { STATUS } = require('../utils/constants');
 const { successResponseBody, errorResponseBody} = require('../utils/responsebody');
+
 const verifyTicketNotificationCreateRequest = async (req, res, next) =>{
     if(!req.body.subject) {
         errorResponseBody.err = 'No subject given for the email';

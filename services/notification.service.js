@@ -1,5 +1,6 @@
 const Ticket = require('../models/ticketNotification');
 const { STATUS } = require('../utils/constants');
+
 const create = async (data) => {
     try {
         const ticket = await Ticket.create(data);
